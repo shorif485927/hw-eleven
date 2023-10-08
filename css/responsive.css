@@ -1,0 +1,104 @@
+@media (min-width: 992px){
+    nav  {
+           box-shadow: none;
+    }
+    #hero{
+      margin-top: 30px;
+    }
+
+    .button{
+      padding: 16px 32px;
+    font-size: 16px;
+    }
+    .outline__btn{
+      margin-left: 10px;
+    }
+  }
+/* width 991 starts  */
+  @media (max-width: 991px){
+    #customNav ul li {
+        text-align: right;
+    }
+
+    .about__details h3{
+      margin-top: 43px;
+    }
+    .about__details p{
+      padding: 0 17px ;
+    }
+    .pjct__btn{
+      border-radius: 15px;
+      padding: 11px 280px;
+      font-size: 14px;
+    }
+     .card{
+      width: 100% !important;
+     }
+     .card p{
+      padding: 0 50px;
+     }
+  }
+
+
+
+  /* todo 325px starts  */
+
+@media (min-width:325px) and (max-width:768px){
+  .hero_cnt{
+    padding: 10px 20px;
+
+  }
+  .hero_cnt h4{
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .hero_cnt h4 span{
+    margin-left: 18px;
+  }
+
+.hero_cnt h1{
+font-size: 35px;
+}
+
+.hero_cnt p{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.button{
+  padding: 8px 12px;
+font-size: 10px;
+}
+.outline__btn{
+  margin-left: 10px;
+}
+
+
+.hero__list p{
+  margin-right: 0;
+}
+.hero_cnt .hero__list li{
+  margin: 0 3px;
+}
+
+#hero .mouse{
+
+  display: none;
+}
+
+
+ #card{
+   padding: 50px 4px;
+ }
+
+ #project .project__details{
+  padding: 30px 20px;
+ }
+
+ .about__img img{
+  transform: rotateY(197deg);
+   }
+
+
+
+}
+/* todo 325 px ends  */

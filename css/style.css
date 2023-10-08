@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&family=Potta+One&display=swap');
+
+
+
+ /* * common css starts  */
+ :root{
+  --1stfont:'Poppins', sans-serif;
+  --2ndfont:'PT Sans', sans-serif;
+  --3rdfont:'Baloo Da 2', cursive;
+  --4thfont:'Potta One', cursive;
+
+  --1stcolor: #FC0;
+  --2ndcolor: #353535;
+ }
+
+
+  ul,li,ol{
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  h1,h2,h3,h4,h5,h6,span,ol,ul,p{
+    margin: 0;
+    padding: 0;
+  }
+  .container{
+   margin: auto;
+  }
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+ .banner__buttons span{
+  margin-left: 10px;
+ }
+
+.button{
+  width: 209px;
+height: 69px;
+flex-shrink: 0;
+  border-radius: 20px;
+background: #FC0;
+color: #FFF;
+font-family: Poppins;
+font-size: 20px;
+padding: 16px 45px;
+font-weight: 600;
+line-height: 69px;
+text-transform: capitalize;
+
+}
+.outline__btn{
+  background-color: transparent;
+  border-radius: 20px;
+border: 1px solid #000;
+color: #353535;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+line-height: 180%; /* 36px */
+margin-left: 30px;
+}
+.button span{
+  margin-left: 11px;
+}
+
+ /* *common css ends  */
+
+ /* todo navvar design starts  */
+ nav {
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  padding: 16px !important;
+
+ }
+   #customNav ul li a{
+    color: var(--2ndcolor);
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%; 
+text-transform: uppercase;
+padding: 18px 22px 5px;
+display: inline-block;
+position: relative;
+   }
+   #customNav ul li a::before{
+     content: '';
+     width:0;
+     height: 1px;
+     background-color: var(--2ndcolor);
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transition: .3s;
+   }
+   #customNav ul li:hover a::before{
+    width: 100%;
+   }
+   nav .navbar-toggler{
+border: none;
+   }
+   nav .navbar-toggler:focus{
+    box-shadow: none;
+   }
+ /* todo navvar design ends */
+
+
+ /* banner design starts  */
+
+ #hero{
+  position: relative;
+
+ }
+ .hero_cnt h4{
+  color: var(--2ndcolor);
+font-family: var(--1stfont);
+font-size: 24px;
+font-weight: 400;
+ }
+.hero_cnt h4 span{
+font-size: 32px;
+color: var(--1stcolor);
+margin-left: 38px;
+}
+.hero_cnt h1{
+  color: #353535;
+font-family: PT Sans;
+font-size: 64px;
+font-weight: 700;
+text-transform: capitalize;
+margin: 15px 0 25px;
+}
+
+.hero_cnt p{
+  color: #353535;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 180%; 
+margin-bottom: 45px;
+}
+
+.hero_cnt .hero__list   li{
+  display: inline-block;
+  margin: 0 13px;
+  width: 40px;
+  height: 40px;
+  background-color:#F4F3F3;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+
+}
+.hero__list{
+  margin-top: 60px;
+}
+.hero__list p{
+  color: #353535;
+font-family: Poppins;
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; 
+text-transform: capitalize;
+margin-right: 32px;
+display: inline-block;
+}
+.hero_cnt .hero__list   li a{
+color: black;
+}
+#hero .mouse{
+  width: 40px;
+height: 40px;
+position: absolute;
+bottom: 20px;
+ left: 48%;
+
+}
+ /* banner design ends  */
+
+ /* todo about stars */
+   #about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+   }
+   #about h3{
+    color: #353535;
+font-family: PT Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+   }
+   #about p{
+    padding: 16px 0 35px;
+    color: #4D4D4D;
+font-family: Poppins;
+font-size: 14.5px;
+font-weight: 400;
+line-height: 170.5%; /* 24.723px */
+   }
+ /* todo about ends  */
+
+ /** card design starts  */
+ #card{
+    padding: 151px 0;
+ }
+ #card .card{
+  text-align: center;
+  width: calc(350px - 64px);
+  height: 367px;
+  flex-shrink: 0;
+  border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+border: none;
+margin: 0 32px;
+ }
+ #card .card img{
+  width: 78px;
+height: 79px;
+margin: auto;
+margin-top: 39px;
+margin-bottom: 39px;
+ }
+ .card h3{
+  color: #353535;
+text-align: center;
+font-family: Poppins;
+font-size: 22px;
+font-weight: 600;
+line-height: 180%; /* 39.6px */
+margin-bottom: 18px;
+ }
+ .card p{
+  color: #7A7A7A;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%; /* 30.4px */
+ }
+  /** card design ends  */
+
+ /* project section starts   */
+  #project{
+    border-radius: 20px;
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+  }
+  #project .project__details{
+    padding: 0 65px;
+  }
+  .project__details p{
+    margin-bottom: 35px;
+  }
+ .pjct__btn{
+    background-color: transparent;
+    color: #353535;
+text-align: center;
+font-family: Poppins;
+font-size: 17px;
+font-weight: 500;
+line-height: 180%; /* 30.6px */
+    border-radius: 20px;
+border: 1px solid #000;
+padding: 18px 38px;
+  }
+ /* project section ends  */
